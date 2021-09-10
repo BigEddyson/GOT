@@ -1,0 +1,152 @@
+@import 'reset';
+
+.background{
+    background-image: url(../images/bg_image.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000;
+    position: relative;
+    max-width: 100%;
+    height: 100vh;
+
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 62px;
+        padding: 70px 80px 74px 72px;
+        width: 100%;
+        margin: 0px 0 0px;
+        .logo{
+            min-width: 180px;
+            height: 62px;
+            cursor: pointer;
+        }
+
+        nav{
+            width: 100%;
+            margin-left: 23px;
+            margin-right: 26px;
+            ul{
+                display: flex;
+                align-items: center;
+                position: relative;
+                width: 100%;
+                &:after{
+                    content:'';
+                    position: relative;
+                    width: 100%;
+                    background-color: #FEFFD3;
+                    opacity: 0.3;
+                    height: 2px;
+                    margin-left: 10px;
+                  }
+                li{
+                    display: inline;
+                    margin: 10px;
+                    a, a:visited, a:active{
+                        color: rgb(255, 255, 255);
+                        font-family: Montserrat;
+                        font-size: 17px;
+                        line-height: 25.5px;
+                    }
+                }
+            }
+        }
+
+        button{
+            background: #00000000;
+            cursor: pointer;
+            min-width: 79px;
+            height: 51px;
+        }
+    }
+
+    .figure{
+        display: flex;
+        flex-direction: column;
+
+        width: calc(100% - 160px);
+        height: calc(100vh - 260px);
+        min-height: 350px;
+        margin: auto;
+        border-right: 2px solid #FEFFD3;
+        *{
+            font-family: Montserrat;
+        }
+            p, button{
+                color: #FEFFD3;
+            }
+            .se{
+                font-size: 18px;
+                font-weight: bold;
+                padding: 0px 0px 16px;
+            }
+            .slogan{
+                max-width: 500px;
+                max-height: 150px;
+                padding: 10px 0 10px;
+                font-family: Roboto;
+                font-size: 72px;
+                margin: 0px 0px 54px;
+            }
+            .description{
+                max-width: 450px;
+                max-height: 74px;
+                font-weight: 500;
+                font-size: 16px;
+                color: #B9BCC7;
+                margin: 0px 0px 44px;
+            }
+            .button{
+                display: flex;
+                flex-direction: row;
+                .button1{
+                    width: 188px;
+                    height: 61px;
+                    background-color: #ffffff00;
+                    margin: 0px 31px 0px 0px;
+                }
+                .button2{
+                    width: 188px;
+                    height: 61px;
+                    background: #04162B;
+                    border-radius: 3px 30px 30px 3px;
+                }
+            }
+    }
+        .footer{
+            width: 100%;
+            padding: 50px 80px 0px;
+            margin: auto;
+            height: 62px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Montserrat;
+            p{
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                font-size: 14px;
+                width: 100%;
+
+                color: #FEFFD3;
+
+                &:after{
+                    content:'';
+                    position: relative;
+                    width: 100%;
+                    background-color: #FEFFD3;
+                    opacity: 0.3;
+                    height: 2px;
+                    margin-left: 10px;
+                }
+            }
+        }
+}
